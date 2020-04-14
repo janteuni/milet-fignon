@@ -1,39 +1,46 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from 'gatsby-image'
 import Container from "../components/container"
+import recetteStyles from "./recette.module.scss"
 
-export const Template = ({ data }) => {
+export const Recette = ({ data }) => {
   const recette = data.markdownRemark
-  const image = data.file
+  const image = data.file.childImageSharp.fluid
+  const style = {
+    backgroundImage: 'url(' + image.src + ')',
+    backgrounRepeat: 'no repeat',
+    backgroundPosition: 'right',
+    backgroundSize: 'cover'
+  }
   return (
     <Container>
-      <Img
-        fluid={image.childImageSharp.fluid}
-        alt="A corgi smiling happily"
-      />
-      <h1>{recette.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: recette.html }} />
+      <div className='flex'>
+        <div style={style} className='flex-1 mw50'></div>
+        <div className='col-4 px3 mt2 mb4'>
+          <h1 className='mb4'>{recette.frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: recette.html }} />
+        </div>
+      </div>
     </Container>
   )
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String!, $image: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        title
+        title,
+        image
       }
     }
-  file(relativePath: {eq: "images/saumon.jpg"}) {
-    id
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid
+    file(relativePath: { eq: $image }) {
+      childImageSharp {
+        fluid(maxWidth: 1900) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-  }
   }
 `
-export default Template
+export default Recette

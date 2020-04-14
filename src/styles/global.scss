@@ -20,7 +20,18 @@ svg {
 ul,
 ol {
   list-style: none;
+  padding-left: 1rem;
 }
+
+/*
+ul li::before {
+  content: "\2581";
+  color: $terracota-300;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5rem;
+  margin-left: -1rem;
+}*/
 
 hr {
   border: 0;
@@ -30,9 +41,15 @@ hr {
 }
 
 body {
-  background-color: #F1E7DF;
-  color: white;
+  background-color: white;
+  color: $grey-800;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#___gatsby, #gatsby-focus-wrapper {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
@@ -43,11 +60,3 @@ body {
   flex-direction: column;
 }
 
-.container {
-  width: 100%;
-  max-width: 1064px;
-  min-width: 320px;
-  padding: 0 20px;
-  margin-left: auto;
-  margin-right: auto;
-}

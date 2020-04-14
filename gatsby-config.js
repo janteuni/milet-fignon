@@ -24,8 +24,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Prata`,
-            variants: [`400`]
+            family: `Playfair Display`,
+            variants: [`700`, `800`]
           },
           {
             family: `Open Sans`,

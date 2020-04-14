@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -19,12 +19,33 @@ pre {
 }
 
 a {
-  color: blue;
+  color: $terracota-600;
+  font-weight: 600;
   text-decoration: none;
+  background-image: linear-gradient(to top, $terracota-50, $terracota-50 1px, rgba(0, 0, 0, 0) 3px);
   cursor: pointer;
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background-color: #fff6f2;
   }
+}
+
+p {
+  margin-bottom: 1.125rem;
+  + h2 {
+    margin-top: 3rem;
+  }
+}
+
+ul {
+  border-left: 4px solid $terracota-50;
+  background-color: #fff6f2;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  + h2 {
+    margin-top: 3rem;
+  }
+  li + li { padding-top: .3rem }
 }
 
 /*
@@ -62,15 +83,13 @@ em,
 /*
   TITLE
  */
-.title {
-  font-family: 'windlesham', sans-serif;
-}
-
 .title--main {
   font-size: 3rem;
-  font-weight: 400;
-  font-family: 'Prata';
+  font-weight: 700;
+  font-family: 'Playfair Display';
+  color: #E06A3F;
   margin-bottom: 0.5rem;
+  line-height: 1em;
 }
 
 .title--secondary {
@@ -80,7 +99,8 @@ em,
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
@@ -88,7 +108,7 @@ em,
   font-family: 'Source Code Pro', Consolas, monospace;
 }
 
-h1 { @extend .title--secondary }
+h1 { @extend .title--main }
 h2, h3, h4 { @extend .subtitle }
 
 /*
