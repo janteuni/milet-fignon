@@ -18,7 +18,7 @@ pre {
   overflow-x: hidden;
 }
 
-a {
+a, {
   color: $terracota-600;
   font-weight: 600;
   text-decoration: none;
@@ -102,6 +102,22 @@ em,
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+}
+
+.header{
+  transform: rotate(-90deg);
+  z-index: 1;
+  a {
+    @extend .subtitle;
+    font-family: 'Playfair Display';
+    background-color: white;
+    border: 4px solid white;
+    transform: rotate(-90deg);
+    &:hover {
+      text-decoration: none;
+      background-color: #fff6f2;
+    }
+  }
 }
 
 .code {

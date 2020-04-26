@@ -1,11 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 import Container from "../components/container"
 
 const Index = ({ data }) => (
-    <Container>
-      <Link to="/about">About</Link>
+  <Container>
+    <Img
+        fluid={data.file.childImageSharp.fluid}
+        alt="Milet Fignon home page"
+      />
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div>
             <h2>{node.frontmatter.title}</h2>
@@ -14,7 +18,7 @@ const Index = ({ data }) => (
           </div>
         ))}
 
-    </Container>
+  </Container>
 )
 
 export const query = graphql`
@@ -31,6 +35,13 @@ export const query = graphql`
             slug
           }
           excerpt
+        }
+      }
+    }
+    file(relativePath: { eq: "images/home.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1900) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

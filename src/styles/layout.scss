@@ -11,6 +11,18 @@
   height: 100%;
 }
 
+@media (min-width: 52em) {
+  .md-mw50 {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 40em) {
+  .sm-h400 {
+    height: 400px;
+  }
+}
+
 /*
 Flex
 */

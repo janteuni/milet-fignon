@@ -10,13 +10,13 @@ export const Recette = ({ data }) => {
     backgroundImage: 'url(' + image.src + ')',
     backgrounRepeat: 'no repeat',
     backgroundPosition: 'right',
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
   }
   return (
     <Container>
-      <div className='flex'>
-        <div style={style} className='flex-1 mw50'></div>
-        <div className='col-4 px3 mt2 mb4'>
+      <div className='md-flex'>
+        <div style={style} className='flex-1 md-mw50 sm-h400'></div>
+        <div className='md-col-4 px3 mt2 mb4'>
           <h1 className='mb4'>{recette.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: recette.html }} />
         </div>
