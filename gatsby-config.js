@@ -9,6 +9,7 @@ module.exports = {
   siteMetadata: {
     title: `Milet Fignon`,
   },
+  pathPrefix: "/milet-fignon",
   plugins: [
     `gatsby-plugin-sass`,
     {
