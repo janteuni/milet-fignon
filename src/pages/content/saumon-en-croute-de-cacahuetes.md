@@ -1,6 +1,7 @@
 ---
 title: "Saumon en croute de cacahuètes"
 date: "2017-08-10"
+desc: "Une recette sucrée-salée bien beurrée"
 image: "saumon.jpg"
 ---
 ## Ingrédients

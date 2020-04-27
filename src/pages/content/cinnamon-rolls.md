@@ -1,6 +1,7 @@
 ---
 title: "Cinnamon & rhubarbe rolls"
 image: "saumon.jpg"
+desc: "La moelleusitée des #schnenken #Zimtschnecke et autre rolls"
 date: "2017-08-22"
 ---
 ## Ingrédients

@@ -18,7 +18,7 @@ pre {
   overflow-x: hidden;
 }
 
-a, {
+a:not(.receipeList) {
   color: $terracota-600;
   font-weight: 600;
   text-decoration: none;

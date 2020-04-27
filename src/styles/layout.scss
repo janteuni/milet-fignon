@@ -1,3 +1,21 @@
+.receipeList {
+  padding: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgba($terracota-50, 0.1);
+  }
+
+  +.receipeList {
+    border-top: 3px solid $terracota-50;
+  }
+  h2 {
+    color: $terracota-600;
+    font-weight: 700;
+    font-family: 'Playfair Display';
+  }
+}
+
 .w100 {
   width: 100%;
 }

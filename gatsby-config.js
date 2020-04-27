@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: `Milet Fignon`,
   },
-  pathPrefix: "/milet-fignon",
+  pathPrefix: process.env.PATH_PREFIX || "/milet-fignon",
   plugins: [
     `gatsby-plugin-sass`,
     {

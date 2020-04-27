@@ -1,6 +1,7 @@
 ---
 title: "Filet mignon sauce aux agrumes"
 image: "saumon.jpg"
+desc: "il filetto mignon di maiale è ottimo con un risotto al basilico per rinfrescare il tuo piatto"
 date: "2017-08-21"
 ---
 ## Ingrédients
