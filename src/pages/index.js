@@ -11,7 +11,7 @@ const Index = ({ data }) => (
         alt="Milet Fignon home page"
       />
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div>
+          <div key={node.frontmatter.title}>
             <h2>{node.frontmatter.title}</h2>
             <p>{node.frontmatter.date}</p>
             <Link to={node.fields.slug}>go</Link>

@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Container from "../components/container"
-import recetteStyles from "./recette.module.scss"
 
 export const Recette = ({ data }) => {
   const recette = data.markdownRemark
