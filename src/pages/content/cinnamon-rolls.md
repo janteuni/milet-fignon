@@ -52,7 +52,7 @@ Faire un grand rectangle avec la pate et étaler la pâte à tartiner sur toute 
 
 Découper ensuite des rouleaux de taille identiques, placez-les dans le moule préalablement beurré et laisser reposer encore 1h30.
 
-Préchauffer le four à 180, badigeonner d'un peu de lait, enfourner et laisser cuire jusqu'à ce que les roulés soient bien dorés (environ 15 minutes). La recette ressemble fortement à ce qu'on a pu découvrir (dans une boulangerie à Berlin)[https://withberlinlove.com/2016/06/15/zeit-fur-brot/].
+Préchauffer le four à 180, badigeonner d'un peu de lait, enfourner et laisser cuire jusqu'à ce que les roulés soient bien dorés (environ 15 minutes). La recette ressemble fortement à ce qu'on a pu découvrir [dans une boulangerie à Berlin](https://withberlinlove.com/2016/06/15/zeit-fur-brot/).
 
 
 
